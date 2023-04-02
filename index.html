@@ -310,7 +310,159 @@
   <div class="capitulo-4 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (4.1)
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-51">(TCC 51.3)</a> Momento angular generalizado
+      </span>
+      <span class="formula">
+        [J_i, J_j] = i\varepsilon_{ijk}J_k
+      </span>
+      <span class="formula">
+        J^2 = J_1^2+J_2^2+J_3^2 = j(j+1) \mathbb{I}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        (\hbar = 1)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.1) Spin de los fermiones de Dirac
+      </span>
+      <span class="formula"></span>
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-40">(TCC 40.1)</a> Generadores $G^{\mu\nu}$ de la representación
+        </br> espinoral del grupo de Lorentz
+      </span>
+      <span class="formula">
+        J_1 = G^{23} = \frac{\sigma^{23}}{2}, \qquad J_2 = G^{31} = \frac{\sigma^{31}}{2},
+      </span>
+      <span class="formula">
+        J_3 = G^{12} = \frac{\sigma^{12}}{2}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \left(\frac{\sigma^{23}}{2}\right)^2+\left(\frac{\sigma^{31}}{2}\right)^2+\left(\frac{\sigma^{12}}{2}\right)^2 = \frac{3}{4}\mathbb{I}
+      </span>
+      <span class="formula">
+        j = \frac{1}{2}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.2) Spin de los fotones
+      </span>
+      <span class="formula"></span>
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-39">(TCC 39.7)</a> Generadores $J^\mu$ del grupo de Lorentz
+      </span>
+      <span class="formula">
+        J_1 = iM^{23}, \qquad J_2 = iM^{31}, \qquad J_3 = iM^{12}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \left(iM^{23}\right)^2+\left(iM^{31}\right)^2+\left(iM^{12}\right)^2 = 2\begin{pmatrix}
+          0 & 0 & 0 & 0\\
+          0 & 1 & 0 & 0\\
+          0 & 0 & 1 & 0\\
+          0 & 0 & 0 & 1\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        j = 1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.3) Teorema de Noether para varios campos
+      </span>
+      <span class="formula">
+        j^\mu = \sum_i j_i^\mu
+      </span>
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoMecanicaTeoricaJavierGarcia/#capitulo-35">(MT 35.3)</a> Teorema de Noether
+      </span>
+      <span class="formula">
+        j^\mu = \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)}\delta \phi - T^\mu{}_\nu \delta x^\nu
+      </span>
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoMecanicaTeoricaJavierGarcia/#capitulo-34">(MT 34.8)</a> Tensor de Energía-Momento para un campo escalar
+      </span>
+      <span class="formula">
+        T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)}\partial^\nu \phi - g^{\mu\nu}\mathcal{L}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        j^\mu = \sum_i \left[\frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi_i)}\delta \phi_i
+        - \left(\frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi_i)}\partial_\nu \phi_i - \delta^{\mu}_\nu\mathcal{L}\right) \delta x^\nu\right]
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.4) Variación bajo transformaciones infinitesimales
+      </span>
+      <span class="formula">
+        \delta x^\mu = \omega^\mu{}_\nu x^\nu, \qquad A^\mu = \omega^\mu{}_\nu x^\nu
+      </span>
+      <span class="formula">
+        \delta \psi = -\frac{i}{2}\omega_{\mu\nu}\frac{\sigma^{\mu\nu}}{2}\psi, \qquad \delta \bar{\psi} = \bar{\psi}\frac{i}{2}\omega_{\mu\nu}\frac{\sigma^{\mu\nu}}{2}
+      </span>
+      <span class="formula-titulo">
+        Rotaciones
+      </span>
+      <span class="formula">
+        \omega_{0i}=0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.5) Conservación del momenta angular
+      </span>
+      <span class="formula formula-texto">
+        \text{Usando el Teorema de Noether}
+      </span>
+      <span class="formula">
+        j^0 = j^0_\psi + j^0_{\bar{\psi}} + j^0_A
+      </span>
+      <span class="formula">
+        j^0_\psi = \psi^\dag \vec{\omega} \cdot \left(\vec{\Sigma} + \vec{L}\right)\psi
+      </span>
+      <span class="formula">
+        j^0_{\bar{\psi}} = 0
+      </span>
+      <span class="formula">
+        j^0_A = i E^i \vec{\omega}\cdot (\vec{J}^i{}_j + \delta^i_j\vec{L}) A^j
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \vec{\omega} = (\omega_{23}, \omega_{31}, \omega_{12})
+      </span>
+      <span class="formula">
+        L^i = -i\varepsilon_{ijk} x^j \partial_k
+      </span>
+      <span class="formula">
+        \Sigma^i = \frac{1}{2}\left(\begin{array}{c:c}
+          \sigma^i & 0\\
+          \hdashline
+          0 & \sigma^i\\
+        \end{array}\right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.6) Momento angular total
+      </span>
+      <span class="formula">
+        \vec{J} = \vec{\Sigma}_\psi + \vec{L}_\psi + \vec{\Sigma}_A + \vec{L}_A
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.7) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Calcular la contribución del fotón a la carga conservada } j^0.
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
       </span>
     </div>
   </div>

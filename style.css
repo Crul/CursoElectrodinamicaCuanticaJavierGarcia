@@ -33,12 +33,12 @@ h1 {
   font-size: 140%;
   font-weight: normal;
   background-color: #144c48;
-  color: #e6fdf8;
+  color: #d2e7e2;
   padding: 9px;
   margin: 0;
 }
   h1 a {
-    color: #e6fdf8;
+    color: #d2e7e2;
   }
   h1 a:hover {
     color: #fff;
@@ -54,14 +54,14 @@ h3 {
   text-align: right;
 }
   h3 a {
-    color: #e6fdf8;
+    color: #d2e7e2;
   }
   h3 a:hover {
     color: #fff;
   }
 
 #topContent {
-  background-color: #e6fdf8;
+  background-color: #d2e7e2;
   display: table;
   width: 100%;
 }
@@ -83,8 +83,8 @@ h3 {
 
 #footer {
   text-align: center;
-  background-color: #e6fdf8;
-  color: #45b6ac;
+  background-color: #d2e7e2;
+  color: #3fa79e;
   margin-top: 24px;
   padding: 4px 0;
 }
@@ -106,11 +106,11 @@ ul {
   }
   ul li a {
     display: inline-block;
-    background-color: #45b6ac;
-    color: #e6fdf8;
+    background-color: #3fa79e;
+    color: #d2e7e2;
     text-decoration: none;
     padding: 2px 8px;
-    border: solid 1px #e6fdf8;
+    border: solid 1px #d2e7e2;
   }
     ul li a:first-child {
       width: 106px;
@@ -125,14 +125,14 @@ ul {
 h2 {
   font-size: 120%;
   font-weight: normal;
-  background-color: #45b6ac;
+  background-color: #3fa79e;
   padding: 6px;
   margin: 0 0 2px 0;
   clear: both;
   min-height: 24px;
 }
   h2 a.formulas-title {
-    color: #e6fdf8;
+    color: #d2e7e2;
     text-decoration: none;
     vertical-align: middle;
   }
@@ -154,13 +154,13 @@ h2 {
   text-align: center;
   cursor: pointer;
   border-radius: 3px;
-  color: #45b6ac;
-  border: solid 1px #45b6ac;
+  color: #3fa79e;
+  border: solid 1px #3fa79e;
   padding: 5px;
   vertical-align: bottom;
 }
   .fold-buttons > div:hover {
-    color: #e6fdf8;
+    color: #d2e7e2;
     border: solid 1px #144c48;
     background-color: #144c48;
   }
@@ -175,7 +175,7 @@ h2 {
   display: inline-block;
   vertical-align: top;
   border: dotted 1px #ccc;
-  border-top: solid 1px #45b6ac;
+  border-top: solid 1px #3fa79e;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -229,7 +229,7 @@ h2 {
 .formula-titulo {
   display: block;
   padding: 4px;
-  background-color: #e6fdf8;
+  background-color: #d2e7e2;
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   font-size: 90%;
@@ -276,7 +276,7 @@ h2 {
 }
 
   .wolfram-alpha-link a {
-    color: #45b6ac;
+    color: #3fa79e;
     text-decoration: none;
   }
     .wolfram-alpha-link a:hover {
@@ -297,9 +297,9 @@ h2 {
   padding: 2px 0 0 0;
   text-align: center;
   margin-right: 6px;
-  color: #e6fdf8;
-  background-color: #45b6ac;
-  border: solid 1px #e6fdf8;
+  color: #d2e7e2;
+  background-color: #3fa79e;
+  border: solid 1px #d2e7e2;
   border-radius: 3px;
   vertical-align: middle;
   text-decoration: none;
@@ -352,7 +352,7 @@ h2 {
   h3 {
     float: none;
     margin: 0;
-    background-color: #45b6ac;
+    background-color: #3fa79e;
   }
 
   .fold-buttons {

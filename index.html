@@ -616,7 +616,103 @@
   <div class="capitulo-7 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (7.1)
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-14">(TCC 14.2)</a> Función de Green
+      </span>
+      <span class="formula">
+        f(x) = \int_{-\infty}^{\infty} G(x,x') \ g(x') \ dx'
+      </span>
+      <span class="formula-titulo">
+        Que, dado un operador A,
+      </span>
+      <span class="formula">
+        A \left[ f(x) \right] = g(x)
+      </span>
+      <span class="formula-titulo">
+        cumple:
+      </span>
+      <span class="formula">
+        A \left[ G(x, x') \right] = \delta(x - x')
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.1) Propagador / Función de Green
+      </span>
+      <span class="formula">
+        \left[i\frac{\partial}{\partial t} - (\hat{H}_0 + \hat{V})\right] \psi = 0
+      </span>
+      <span class="formula">
+        \left[i\frac{\partial}{\partial{t_2}}-(\hat{H}_0 + \hat{V})\right]K(\vec{x}_2, t_2;\vec{x}_1, t_1) = i\delta^{(4)}(x_1-x_2)
+      </span>
+      <span class="formula">
+        \psi(\vec{x}_2, t_2) = \int K(\vec{x}_2, t_2;\vec{x}_1, t_1) \psi(\vec{x}_1,t_1)\mathrm{d}^3 x_1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.2) Propagador en la base propia del hamiltoniano
+      </span>
+      <span class="formula">
+        (\hat{H}_0 + \hat{V})\phi_n(\vec{x}) = E_n \phi_n(\vec{x})
+      </span>
+      <span class="formula">
+        K(\vec{x}_2, t_2;\vec{x}_1, t_1) =
+        \begin{cases}
+          \sum_n \phi_n(\vec{x}_2)\phi_n^*(\vec{x}_1)e^{-i(t_2-t_1)E_n} & t_2 > t_1\\
+          0 & t_2 < t_1
+        \end{cases}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.3) Relación con el propagador libre
+      </span>
+      <span class="formula">
+        K(\vec{x}_2, t_2;\vec{x}_1, t_1) = K_0(\vec{x}_2, t_2;\vec{x}_1, t_1) + K^{(1)}(\vec{x}_2, t_2;\vec{x}_1, t_1) + K^{(2)}(\vec{x}_2, t_2;\vec{x}_1, t_1) + \cdots
+      </span>
+      <span class="formula-titulo">
+        Donde:
+      </span>
+      <span class="formula">
+        \left[i\frac{\partial}{\partial{t_2}}-\hat{H}_0\right]K_0(\vec{x}_2, t_2;\vec{x}_1, t_1) = i\delta^{(4)}(x_1-x_2)
+      </span>
+      <span class="formula">
+        K^{(1)}(\vec{x}_2, t_2;\vec{x}_1, t_1) = -i \int K_0(\vec{x}_2, t_2;\vec{x}_3, t_3)V(\vec{x}_3)K_0(\vec{x}_3, t_3;\vec{x}_1, t_1)\mathrm{d}^4x_3
+      </span>
+      <span class="formula">
+        K^{(2)}(x_2;x_1) = (-i)^2 \int K_0(x_2;x_4)V(\vec{x}_4)K_0(x_4;x_3)V(\vec{x}_3)K_0(x_3;x_1)\mathrm{d}^4x_3\mathrm{d}^4x_4
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.4) Propagador de Dirac
+      </span>
+      <span class="formula">
+        (i\gamma^\mu \partial_\mu - m)\psi = q\gamma^\mu A_\mu \psi
+      </span>
+      <span class="formula">
+        H_0 = -i\gamma^0 \gamma^j\partial_j + \gamma^0 m, \qquad V=q\gamma^0\gamma^\mu A_\mu
+      </span>
+      <span class="formula">
+        K_+(x_2;x_1) =
+        \begin{cases}
+          \sum_{\{n:E_n>0\}} \phi_n(\vec{x}_2) \bar{\phi}_n(\vec{x}_1) e^{-i(t_2-t_1)E_n} & t_2 > t_1\\
+          -\sum_{\{n:E_n<0\}} \phi_n(\vec{x}_2)\bar{\phi}_n(\vec{x}_1)e^{-i(t_2-t_1)E_n} & t_2 < t_1
+        \end{cases}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.5) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que el propagador }
+      </span>
+      <span class="formula formula-texto">
+        K(x_2;x_1) = K_0(x_2;x_1)-i\int K_0(x_2;x_3)V(\vec{x}_3)K(x_3;x_1)\mathrm{d}^4x_3
+      </span>
+      <span class="formula formula-texto">
+        \text{cumple la ecuación (7.1)}.
       </span>
     </div>
   </div>

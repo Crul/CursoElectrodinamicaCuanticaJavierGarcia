@@ -140,6 +140,7 @@
       </span>
     </div>
     <div class="grupo-formulas">
+      <!--Formula enlazada en el capítulo 9 de QED-->
       <span class="formula-titulo">
         (1.3) Lagrangiano de Dirac
       </span>
@@ -850,7 +851,116 @@
   <div class="capitulo-9 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (9.1)
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-45">(TCC 45.1)</a> Solución general de la ecuación de Dirac
+      </span>
+      <span class="formula">
+       \psi = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 \omega_k}}\left(c_r(\vec{k}) u_r(\vec{k})e^{-ikx} + d_r(\vec{k})v_r(\vec{k})e^{ikx} \right)\frac{d^3 k}{(2\pi)^3}
+      </span>
+      <span class="formula-titulo">
+        Donde
+      </span>
+      <span class="formula">
+        \vec{p} = \hbar \vec{k}
+      </span>
+      <span class="formula">
+        k^0 = \frac{\omega_k}{c} = \sqrt{|\vec{k}|^2+\left(\frac{mc}{\hbar}\right)^2}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (9.1) Cuantización campo de Dirac
+      </span>
+      <span class="formula">
+       \hat{\psi} = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 E_p}}\left(\hat{c}_r(\vec{p}) u_r(\vec{p})e^{-ipx} + \hat{d}^\dag_r(\vec{p})v_r(\vec{p})e^{ipx} \right)\frac{d^3 p}{(2\pi)^3}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (9.2) Cuantización Hamiltoniano de Dirac
+      </span>
+      <span class="formula"></span>
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoElectrodinamicaCuanticaJavierGarcia/#capitulo-1">(QED 1.3)</a> Lagrangiano de Dirac
+      </span>
+      <span class="formula">
+        \hat{H} = \int \mathcal{H}\mathrm{d}^3x
+      </span>
+      <span class="formula">
+        \mathcal{H}_{\mathrm{Dirac}} = \bar{\psi}\left(-i\gamma^k \partial_k + m\right) \psi
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \hat{H}_{\mathrm{Dirac}} = \sum_{r=1}^2 \int E_p \left(\hat{c}^\dag_r(\vec{p})\hat{c}_r(\vec{p})+\hat{d}^\dag_r(\vec{p})\hat{d}_r(\vec{p})\right)\frac{d^3 p}{(2\pi)^3}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (9.3) Propiedades de los spinores de Dirac
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          u_{r}^{\dag}(\vec{p})u_{s}(\vec{p})
+            &= v_{r}^{\dag}(\vec{p})v_{s}(\vec{p})
+            &&= 2E_p\delta_{rs} \\
+          \bar{u}_{r}(\vec{p})u_{s}(\vec{p})
+            &= -\bar{v}_{r}(\vec{p})v_{s}(\vec{p})
+            &&= 2m\delta_{rs} \\
+          \bar{u}_{r}(\vec{p})v_{s}(\vec{p})
+            &= \bar{v}_{r}(\vec{p})u_{s}(\vec{p})
+            &&= 0 \\
+          u_{r}^{\dag}(-\vec{p})v_{s}(\vec{p})
+            &= v_{r}^{\dag}(\vec{p})u_{s}(-\vec{p})
+            &&= 0
+        \end{aligned}
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          \sum_{r=1}^{2}u_{r}(\vec{p})\bar{u}_{r}(\vec{p})
+              &= \gamma ^{\mu}p_{\mu}+m \\
+          \sum_{r=1}^{2}v_{r}(\vec{p})\bar{v}_{r}(\vec{p})
+            &= \gamma ^{\mu}p_{\mu}-m
+        \end{aligned}
+      </span>
+      <span class="formula-titulo">
+        Modificación de las fórmulas <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-43">(TCC 43.5)</a><br> con la nueva normalización.
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (9.4) Relaciones de anticonmutación
+      </span>
+      <span class="formula">
+        \{c_r(\vec{p}), c^\dag_s(\vec{q})\} = (2\pi)^3 \delta^{(3)}(\vec{p}-\vec{q})\delta_{rs}
+      </span>
+      <span class="formula">
+        \{d_r(\vec{p}), d^\dag_s(\vec{q})\} = (2\pi)^3 \delta^{(3)}(\vec{p}-\vec{q})\delta_{rs}
+      </span>
+      <span class="formula">
+        \{c_r(\vec{p}), c_s(\vec{q})\} = \{d_r(\vec{p}), d_s(\vec{q})\} = 0
+      </span>
+      <span class="formula">
+        \{c_r(\vec{p}), d_s(\vec{q})\} = \{c_r(\vec{p}), d^\dag_s(\vec{q})\} = 0
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \{\psi_a(t, \vec{x}), \psi^\dag_b(t, \vec{y})\} = \delta^{(3)}(\vec{x}-\vec{y})\delta_{ab}
+      </span>
+      <span class="formula">
+        \{\psi_a(t, \vec{x}), \psi_b(t, \vec{y})\} = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (9.5) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que } \hat{H}_{\mathrm{Dirac}} \text{ se puede escribir como}
+      </span>
+      <span class="formula">
+        \sum_{r=1}^2 \int E_p \left(\hat{c}^\dag_r(\vec{p})\hat{c}_r(\vec{p}) - \hat{d}_r(\vec{p})\hat{d}^\dag_r(\vec{p})\right)\frac{d^3 p}{(2\pi)^3}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
       </span>
     </div>
   </div>

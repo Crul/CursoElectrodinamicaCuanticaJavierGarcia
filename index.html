@@ -989,7 +989,68 @@
   <div class="capitulo-10 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (10.1)
+        (10.1) Operador creación $e^+$ y aniquilación $e^-$.
+        </br> Espacio de posiciones
+      </span>
+      <span class="formula">
+        \psi^+(x) = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 E_p}}c_r(\vec{p}) u_r(\vec{p})e^{-ipx}\frac{d^3 p}{(2\pi)^3}
+      </span>
+      <span class="formula">
+        \psi^-(x) = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 E_p}}d^\dag_r(\vec{p})v_r(\vec{p})e^{ipx}\frac{d^3 p}{(2\pi)^3}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \psi(x) = \psi^+(x) + \psi^-(x)
+      </span>
+      <span class="formula">
+        \psi^+(x)\ket{0} = 0
+      </span>
+      <span class="formula">
+        \psi^-(x)\ket{0} = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 E_p}}v_r(\vec{p})e^{ipx}\ket{e^+_r(\vec{p})}\frac{d^3 p}{(2\pi)^3}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.2) Operador creación $e^-$ y aniquilación $e^+$.
+        </br> Espacio de posiciones
+      </span>
+      <span class="formula">
+        \bar{\psi}^+(x) = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 E_p}}d_r(\vec{p})\bar{v}_r(\vec{p})e^{-ipx}\frac{d^3 p}{(2\pi)^3}
+      </span>
+      <span class="formula">
+        \bar{\psi}^-(x) = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 E_p}}c^\dag_r(\vec{p}) \bar{u}_r(\vec{p})e^{ipx}\frac{d^3 p}{(2\pi)^3}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \bar{\psi}(x) = \bar{\psi}^+(x) + \bar{\psi}^-(x)
+      </span>
+      <span class="formula">
+        \bar{\psi}^+(x)\ket{0} = 0
+      </span>
+      <span class="formula">
+        \bar{\psi}^-(x)\ket{0} = \sum_{r=1}^2 \int \frac{1}{\sqrt{2 E_p}}\bar{u}_r(\vec{p})e^{ipx}\ket{e^-_r(\vec{p})}\frac{d^3 p}{(2\pi)^3}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.3) Función de correlación (a 2 puntos)
+      </span>
+      <span class="formula">
+        \bra{0} \psi(x)\bar{\psi}(y) \ket{0} = \int \frac{\gamma_\mu p^\mu + m}{2E_p}e^{-ip(x-y)}\frac{\mathrm{d}^3p}{(2\pi)^3}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.4) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que } \sum_{r=1}^{2}u_{r}(\vec{p})\bar{u}_{r}(\vec{p}) = \gamma ^{\mu}p_{\mu}+m \text{ (ver fórmula \href{#capitulo-9}{[9.3]})}
+      </span>
+      <span class="formula formula-texto">
+        \text{a partir de las definiciones \href{#capitulo-8}{[8.4]}.}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
       </span>
     </div>
   </div>

@@ -1,5 +1,8 @@
 // https://github.com/Khan/KaTeX
-var katexOptions = { displayMode: true };
+var katexOptions = {
+    displayMode: true,
+    trust: (context) => context.command === '\\href'
+};
 var closeSymbol = '&#128449;';
 var openSymbol = '&#128448;';
 var gotoTopSymbol = '&uarr;';
@@ -32,13 +35,13 @@ function bootstrap() {
 
   $('#menu li')
     .map(getMenuLinks)
-    .each(addUnfoldEvent)
     .each(addVideoLink);
 
   $('#foldAllBtn').click(foldAll);
   $('#unfoldAllBtn').click(unfoldAll);
-  $('.formulas-title').mousedown(unfoldTarget);
-  $('.formula-link').mousedown(unfoldTarget);
+  if (window.history) {
+    window.addEventListener('hashchange', unfoldFromHash);
+  }
 
   $('.spoiler-btn').click(showSpoiler);
 
@@ -102,10 +105,6 @@ function getMenuLinks(index, menuOptElem) {
   };
 }
 
-function addUnfoldEvent(index, menuLinks) {
-  $(menuLinks.formulasLink).mousedown(unfoldTarget);
-}
-
 function addVideoLink(index, menuLinks) {
   var formulasId = getIdFromHref(menuLinks.formulasLink);
   var videoLink = $(menuLinks.videoLink).clone().addClass('view-video-btn');
@@ -122,8 +121,14 @@ function unfoldAll() {
   toggleFormulasBtnElems.html(closeSymbol);
 }
 
-function unfoldTarget(ev) {
-  var formulasId = getIdFromHref(ev.currentTarget);
+function unfoldFromHash() {
+  var hash = document.location.hash;
+  if (!hash) return;
+  var formulasId = hash.substr(1);
+  unfoldCapitulo(formulasId);
+}
+
+function unfoldCapitulo(formulasId) {
   var formulasElem = $('.' + formulasId);
   if (!formulasElem.is(':visible')) {
     formulasElem.show();

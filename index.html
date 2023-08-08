@@ -1067,23 +1067,55 @@
   <div class="capitulo-11 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (11.1) Redefinición del <i>time ordering</i>
+        (11.1) Función de correlación (a 2 puntos) II
+      </span>
+      <span class="formula">
+        \bra{0} \psi_a(x)\bar{\psi}_b(y) \ket{0} = \int \frac{(\gamma_\mu p^\mu + m)_{ab}}{2E_p}e^{-ip(x-y)}\frac{\mathrm{d}^3p}{(2\pi)^3}
+      </span>
+      <span class="formula">
+        \bra{0} \bar{\psi}_b(y)\psi_a(x) \ket{0} = \int \frac{(\gamma_\mu p^\mu - m)_{ab}}{2E_p}e^{-ip(y-x)}\frac{\mathrm{d}^3p}{(2\pi)^3}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (11.2) Introducing the $p_0$ integral
+      </span>
+      <span class="formula"></span>
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoMecanicaTeoricaJavierGarcia/#capitulo-43">(MT 43.1)</a> Prescripción de Feynman
+      </span>
+      <span class="formula">
+        \lim_{ \varepsilon \to 0^+ } \int_{-\infty}^{\infty}
+          \frac{ e^{-iaz} }{ z^2 - b^2 + i \varepsilon } dz
+          = - \frac{ \pi i }{b} e^{ - i b |a| }
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        \frac{e^{-iE_p|x^0-y^0|}}{2E_p} = i \int \frac{e^{-i p_0 |x^0-y^0|}}{p^2-m^2+i\varepsilon} \frac{\mathrm{d} p_0}{2\pi}
+      </span>
+      <span class="formula-titulo">
+        Donde el límite $\varepsilon \to 0^+$ se presume implícito.
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (11.3) Definición del <i>time ordering</i> para el campo de Dirac
       </span>
       <span class="formula">
         \begin{equation*}
-        \operatorname{T}( \psi ( x)\bar{\psi }( y)) \equiv \begin{cases}
-        \psi ( x)\bar{\psi }( y) & , & x^{0}  >y^{0}\\
-        -\bar{\psi }( y) \psi ( x) & , & y^{0}  >x^{0}
+        \mathrm{T}\{ \psi ( x)\bar{\psi }( y)\} \equiv \begin{cases}
+        \psi ( x)\bar{\psi }( y) & x^{0} > y^{0}\\
+        -\bar{\psi }( y) \psi ( x) & y^{0} > x^{0}
         \end{cases}
         \end{equation*}
       </span>
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (11.2) Propagador fermiónico
+        (11.4) Propagador fermiónico
       </span>
       <span class="formula">
-        \braket{0\vert\operatorname{T}(\psi(x)\bar{\psi}(y))\vert 0}=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\,\frac{\gamma^\mu p_\mu+m}{p^2-m^2+i\varepsilon}e^{-ip(x-y)}
+        \braket{0 \vert \mathrm{T}\{\psi(x)\bar{\psi}(y)\} \vert 0}=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\,\frac{i(\gamma^\mu p_\mu+m)}{p^2-m^2+i\varepsilon}e^{-ip(x-y)}
       </span>
     </div>
   </div>

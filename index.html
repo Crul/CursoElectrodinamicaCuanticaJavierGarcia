@@ -1205,18 +1205,29 @@
   <div class="capitulo-13 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (13.1) Conmutador de los operadores de creación y destrucción
+        (13.1) Relaciones de conmutación
       </span>
       <span class="formula">
         \left[a_r(\vec{p}),\,a_s^\dagger(\vec{k})\right] = -(2\pi)^3g_{rs}\,\delta^{(3)}(\vec{p}-\vec{k})
       </span>
+      <span class="formula">
+        \left[A_\mu(t, \vec{x}),\Pi_\nu(t, \vec{y})\right] = -ig_{\mu\nu}\delta^{(3)}(\vec{x}-\vec{y})
+      </span>
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (13.2) Propagador del fotón
+        (13.2) Función de correlación (a 2 puntos)
       </span>
       <span class="formula">
-        \braket{0\vert\operatorname{T}(A^\mu(x)A^\mu(y))\vert 0}=\int\frac{\mathrm{d}^4p}{(2\pi)^4}\,\frac{-g^{\mu\nu}}{p^2+i\varepsilon}e^{-ip(x-y)}
+        \braket{0 \vert A^\mu(x)A^\nu(y) \vert 0} = \int\frac{-g^{\mu\nu}}{2E_p}e^{-ip(x-y)}\frac{\mathrm{d}^3p}{(2\pi)^3}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (13.3) Propagador del fotón
+      </span>
+      <span class="formula">
+        \braket{0 \vert \mathrm{T}\{A^\mu(x)A^\nu(y)\} \vert 0} = \int\frac{\mathrm{d}^4p}{(2\pi)^4}\,\frac{-g^{\mu\nu}}{p^2+i\varepsilon}e^{-ip(x-y)}
       </span>
     </div>
   </div>

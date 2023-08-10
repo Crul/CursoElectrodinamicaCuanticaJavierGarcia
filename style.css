@@ -89,19 +89,16 @@ h3 {
   padding: 4px 0;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 111px; /* =27x4+3 | 4 = 14/4 */
-  margin: 0;
+#menu ul {
+  columns: 4;
+  margin: 3px;
   padding: 16px 16px 4px 16px;
   vertical-align: top;
 }
 
   ul li {
     list-style-type: none;
-    margin: 2px 16px 2px 4px;
+    margin-bottom: 4px;
     font-size: 120%;
   }
   ul li a {
@@ -339,8 +336,8 @@ h2 {
 }
 
 @media screen and (max-width: 1000px) {
-  ul {
-    height: 138px; /* =27x5+3 | 5 = 14/3 */
+  #menu ul {
+    columns: 3;
   }
 }
 
@@ -364,14 +361,14 @@ h2 {
 }
 
 @media screen and (max-width: 582px) {
-  ul {
-    height: 192px; /* =27x7+3 | 7 = 14/2 */
+  #menu ul {
+    columns: 2;
   }
 }
 
 @media screen and (max-width: 400px) {
-  ul {
-    height: auto;
+  #menu ul {
+    columns: 1;
   }
 }
 

@@ -2,7 +2,7 @@
 
 Sitio web: [https://crul.github.io/CursoElectrodinamicaCuanticaJavierGarciaa](https://crul.github.io/CursoElectrodinamicaCuanticaJavierGarcia)
 
-Formulario creado por [Roger](https://github.com/Gaussian-art) y [Crul](https://github.com/Crul).
+Formulario creado por [Roger](https://github.com/rogerbalsach), [Crul](https://github.com/Crul) y [sware](https://github.com/swaree)
 
 ## Librerías utilizadas
 

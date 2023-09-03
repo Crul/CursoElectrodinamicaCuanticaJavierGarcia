@@ -1246,9 +1246,98 @@
 
   <h2 id="capitulo-14"><a href="#capitulo-14" class="formulas-title">Capítulo 14: Primer cálculo</a></h2>
   <div class="capitulo-14 formulas">
+    <span class="formula-titulo">
+      Mensaje para Javier: Falta una integral en las fórmulas, la pongo o no?
+    </span>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (14.1)
+        (14.1) Dispersión de Bhabha
+      </span>
+      <span class="formula">
+        e^-_{r_1}(\vec{p}_1) e^+_{r_2}(\vec{p}_2) \to e^-_{r_3}(\vec{p}_3) e^+_{r_4}(\vec{p}_4)
+      </span>
+      <span class="formula">
+        {}_{{\textstyle\mathstrut}\mathrm{out\!\!}}\braket{e^-_{r_3}(\vec{p}_3) e^+_{r_4}(\vec{p}_4) \vert e^-_{r_1}(\vec{p}_1) e^+_{r_2}(\vec{p}_2)}_\mathrm{in}
+        \sim \braket{e^-_{r_3}(\vec{p}_3) e^+_{r_4}(\vec{p}_4) \vert \mathrm{T}\{\mathcal{L}_{\mathrm{int}}(x_1)\mathcal{L}_{\mathrm{int}}(x_2)\} \vert e^-_{r_1}(\vec{p}_1) e^+_{r_2}(\vec{p}_2)} + \cdots
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.2) Teorema de Wick para ordenación temporal
+      </span>
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{equation*}
+        \mathrm{T}\{\mathcal{L}_{\mathrm{int}}(x_1)\mathcal{L}_{\mathrm{int}}(x_2)\}
+        = q^2\contraction{}{A}{_\mu(x_1)}{A}A_\mu(x_1)A_\nu(x_2)N[\bar{\psi}(x_1)\gamma^\mu \psi(x_1)\bar{\psi}(x_2)\gamma^\nu \psi(x_2)] + \cdots
+      \end{equation*} -->
+      <object data="imgs/14_2_1.svg" type="image/svg+xml"></object></br>
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{equation*}
+        \contraction{}{A}{_\mu(x_1)}{A}A_\mu(x_1)A_\nu(x_2)
+        = \ev{\mathrm{T}\{A_\mu(x_1)A_\nu(x_2)\}}{0} = \int\frac{\mathrm{d}^4p}{(2\pi)^4}\,\frac{-g_{\mu\nu}}{p^2+i\varepsilon}e^{-ip(x_1-x_2)}
+      \end{equation*} -->
+      <object data="imgs/14_2_2.svg" type="image/svg+xml"></object></br>
+      <span class="formula-titulo">
+        Ver fórmulas <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-75">(TCC 75.3)</a> y
+        <a target="_blank" href="https://crul.github.io/CursoElectrodinamicaCuanticaJavierGarcia/#capitulo-13">(QED 13.3)</a><br>
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.3) Ordenación normal
+      </span>
+      <span class="formula">
+        N[\bar{\psi}(x_1)\gamma^\mu \psi(x_1)\bar{\psi}(x_2)\gamma^\nu \psi(x_2)] = \bar{\psi}^-(x_1)\gamma^\mu \psi^-(x_1)\bar{\psi}^+(x_2)\gamma^\nu \psi^+(x_2) + \cdots
+      </span>
+      <span class="formula-titulo">
+        Ver fórmula <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-75">(TCC 75.2)</a><br>
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-82">(TCC 82.1)</a> Relación entre estados<br/>con tri- y cuadrimomentos
+      </span>
+      <span class="formula">
+        \ket{q} = \sqrt{2\omega_q}\ket{\vec{q\,}}
+      </span>
+      <span class="formula">
+        \ket{q} = \sqrt{2\omega_q}a^\dagger_{\vec{q}}\ket{0}
+      </span>
+      <span class="formula-titulo">
+        Donde
+      </span>
+      <span class="formula formula-texto">
+        q^0 = \omega_q = \sqrt{\vec{q\,}^2 + m^2} \quad \text{(on shell)}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.4) Resultado final
+      </span>
+      <span class="formula">
+        {}_{{\textstyle\mathstrut}\mathrm{out\!\!}}\braket{e^-_{r_3}(\vec{p}_3) e^+_{r_4}(\vec{p}_4) \vert e^-_{r_1}(\vec{p}_1) e^+_{r_2}(\vec{p}_2)}_\mathrm{in}
+        \sim  \braket{e^-_{3} e^+_{4} \vert \bar{\psi}^-_1\gamma^\mu \psi^-_1\bar{\psi}^+_2\gamma^\nu \psi^+_2 \vert e^-_{1} e^+_{2}} + \cdots
+      </span>
+      <span class="formula">
+        \braket{e^-_{3} e^+_{4} \vert \bar{\psi}^-_1\gamma^\mu \psi^-_1\bar{\psi}^+_2\gamma^\nu \psi^+_2 \vert e^-_{1} e^+_{2}}
+        = \bar{u}_3\gamma^\mu v_4\bar{v}_2\gamma^\nu u_1 e^{-i(p_1+p_2)x_2}e^{i(p_3+p_4)x_1}
+      </span>
+      <span class="formula-titulo">
+        Donde
+      </span>
+      <span class="formula">
+        \ket{e^{\pm}_i} = \ket{e^{\pm}_{r_i}(\vec{p}_i)}, \qquad \psi^{\pm}_i = \psi^{\pm}(x_i)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.5) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Calcular } \braket{e^-_{3} e^+_{4} \vert \bar{\psi}^-_1\gamma^\mu \psi^-_1\bar{\psi}^+_2\gamma^\nu \psi^+_2 \vert e^-_{1} e^+_{2}}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
       </span>
     </div>
   </div>

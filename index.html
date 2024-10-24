@@ -1151,11 +1151,17 @@
         (12.1) Cuantización del campo del fotón
       </span>
       <span class="formula">
-        \underline{A}(x) = \sum_{r=0}^3 \int \frac{1}{\sqrt{2 E_p}}\left(a_r(\vec{p}) \underline{\varepsilon}_r(\vec{p})e^{-ipx} + a^\dag_r(\vec{p})\underline{\varepsilon}^*_r(\vec{p})e^{ipx} \right)\frac{d^3 p}{(2\pi)^3}
+        \underline{A}^{-}(x) = \sum_{r=0}^3 \int \frac{1}{\sqrt{2 E_p}} a^\dag_r(\vec{p})\underline{\varepsilon}^*_r(\vec{p})e^{ipx} \frac{d^3 p}{(2\pi)^3}
       </span>
       <span class="formula">
-        \underline{\varepsilon}_r = \Lambda\,\underline{e}_r
+        \underline{A}^{+}(x) = \sum_{r=0}^3 \int \frac{1}{\sqrt{2 E_p}} a_r(\vec{p}) \underline{\varepsilon}_r(\vec{p})e^{-ipx} \frac{d^3 p}{(2\pi)^3}
       </span>
+      <span class="formula">
+        \underline{A}(x) = \underline{A}^{+}(x) + \underline{A}^{-}(x)
+      </span>
+      <!-- <span class="formula">
+        \underline{\varepsilon}_r = \Lambda\,\underline{e}_r
+      </span> -->
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
@@ -1163,11 +1169,11 @@
       </span>
       <span class="formula">
         \underline{\varepsilon}_r^* \cdot \underline{\varepsilon}_{s}
-        = g_{\mu\nu}\underline{\varepsilon}^{*\mu}_r \underline{\varepsilon}^\nu_{s}
+        = g_{\mu\nu} \varepsilon^{*\mu}_r \varepsilon^\nu_{s}
         = g_{rs}
       </span>
       <span class="formula">
-        \sum_{r=0}^3 \xi_r \underline{\varepsilon}_r^\mu \underline{\varepsilon}_r^{* \nu} = g^{\mu\nu}
+        \sum_{r=0}^3 \xi_r \varepsilon_r^\mu \varepsilon_r^{* \nu} = g^{\mu\nu}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -1177,13 +1183,13 @@
       <span class="formula">
         \underline{\varepsilon}_0 = \begin{pmatrix}
           1\\0\\0\\0\\
-        \end{pmatrix}\!\!,\;
+        \end{pmatrix}\!\!,\quad
         \underline{\varepsilon}_1 = \frac{1}{\sqrt{2}}\begin{pmatrix}
           0\\
           \cos\theta\cos\phi-i\sin\phi\\
           \cos\theta\sin\phi+i\cos\phi\\
           -\sin\theta\\
-        \end{pmatrix}\!\!,\;
+        \end{pmatrix}\!\!,
       </span>
       <span class="formula">
         \underline{\varepsilon}_2 = \frac{1}{\sqrt{2}}\begin{pmatrix}
@@ -1191,7 +1197,7 @@
           \cos\theta\cos\phi+i\sin\phi\\
           \cos\theta\sin\phi-i\cos\phi\\
           -\sin\theta
-        \end{pmatrix}\!\!,\;
+        \end{pmatrix}\!\!,\quad
         \underline{\varepsilon}_3 = \begin{pmatrix}
           0\\
           \sin\theta\cos\phi\\
